@@ -1,0 +1,105 @@
+@import '../../../styles/scss/theme.scss';
+
+.container {
+
+    .pokedex {
+        background-color: $red;
+        max-width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 10px;
+
+        .pokedex-header {
+            height: 75px;
+
+            .pokedex-header-content {
+                width: 75%;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+
+                .indicator {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: $blue;
+                    border: 5px solid $white;
+                }
+
+                .lights {
+
+                    .light1 {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100%;
+                        background-color: red;
+                        border: 3px solid $white;
+                    }
+
+                    .light2 {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100%;
+                        background-color: yellow;
+                        border: 3px solid $white;
+                    }
+
+                    .light3 {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100%;
+                        background-color: green;
+                        border: 3px solid $white;
+                    }
+                }
+            }
+        }
+
+        .pokedex-content {
+            margin: 0 auto;
+            min-height: 375px;
+            width: 75%;
+            border: 3px solid $lightblack;
+            position: relative;
+
+            .box {
+                height: 50px;
+                width: 125px;
+                z-index: 1;
+                content: "";
+                position: absolute;
+                top: -3px;
+                left: -3px;
+                background-color: $red;
+                border-bottom: 3px solid $lightblack;
+            }
+
+            .triangle {
+                z-index: 1;
+                content: "";
+                position: absolute;
+                top: -4px;
+                left: 122px;
+                border-width: 48px 100px 0 0;
+                border-style: solid;
+                border-color: $red transparent $red transparent; // Adjust the color as needed
+            }
+
+            .triangle-shadow {
+                z-index: 0;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 122px;
+                border-width: 47px 97px 0 0;
+                border-style: solid;
+                border-color: $lightblack transparent $lightblack transparent; // Adjust the color as needed
+            }
+        }
+
+        .pokedex-footer {
+            width: 75%;
+            min-height: 50px;
+        }
+    }
+}
